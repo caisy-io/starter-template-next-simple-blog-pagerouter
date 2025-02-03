@@ -12,6 +12,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@caisy/live-preview-javascript": "^1.1.19",
+    "@caisy/live-preview-react": "^1.2.0",
     "@caisy/rich-text-react-renderer": "^0.7.3",
     "@fontsource/inter": "^4.5.15",
     "graphql": "^16.6.0",
