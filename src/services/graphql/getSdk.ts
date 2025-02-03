@@ -5,6 +5,8 @@ import { getSdk as getSdkWithClient, Requester } from "./__generated/sdk";
 const requester: Requester<any> = async (doc: any, vars: any) => {
   const CAISY_PROJECT_ID = process.env.CAISY_PROJECT_ID;
   const CAISY_API_KEY = process.env.CAISY_API_KEY;
+  const NEXT_PUBLIC_USE_DRAFT_MODE = process.env.NEXT_PUBLIC_USE_DRAFT_MODE;
+
   const NODE_ENV = process.env.NODE_ENV;
   if (!CAISY_PROJECT_ID || CAISY_PROJECT_ID == "") {
     throw new Error(
@@ -22,6 +24,7 @@ const requester: Requester<any> = async (doc: any, vars: any) => {
     {
       headers: {
         "x-caisy-apikey": `${CAISY_API_KEY}`,
+        "x-caisy-preview": `${NEXT_PUBLIC_USE_DRAFT_MODE === "true"}`,
       },
     }
   );

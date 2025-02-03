@@ -506,7 +506,7 @@
   resolved "https://registry.yarnpkg.com/@caisy/live-preview-javascript/-/live-preview-javascript-1.1.19.tgz#4ce4851806b22c2022e3f113069c94b7244c8d91"
   integrity sha512-pRSN5Cr6Hrfd2+A3A2LvFkK5kfR7NXLVNS0R4uqjibmdvRHzg0AzyTGxH4aBbjr1DFYKZRzq2g6dIP0MOpSSNQ==
 
-"@caisy/live-preview-react@^1.2.0":
+"@caisy/live-preview-react@1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@caisy/live-preview-react/-/live-preview-react-1.2.0.tgz#1773c63bf5ce178166008caa092df6ef4b9a0bb7"
   integrity sha512-n4ZPlCtYUmF8NyXXMAV6Zvro63snXgy8UvhpMxBKApTeu607rprPMfguCa1mXj62edRZouOfo7AUFXvQDe3wKQ==

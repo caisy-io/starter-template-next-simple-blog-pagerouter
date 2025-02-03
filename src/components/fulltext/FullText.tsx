@@ -1,15 +1,20 @@
 import { RichTextRenderer } from "@caisy/rich-text-react-renderer";
 import { CenterContainer } from "../CenterContainer";
 import { DocumentLink } from "./overwrites/DocumentLink";
+import { getCaisyInspectProps } from "@caisy/live-preview-react";
 
 interface IFullText {
   text?: any;
+  id?: string | null;
 }
 
-export const FullText: React.FC<IFullText> = ({ text }) => {
+export const FullText: React.FC<IFullText> = ({ text, id }) => {
   return (
     <CenterContainer>
-      <article className="prose lg:prose-xl">
+      <article
+        className="prose lg:prose-xl"
+        {...getCaisyInspectProps({ id: id!, fieldName: "text" })}
+      >
         {text?.json && (
           <RichTextRenderer
             node={text?.json}
